@@ -108,7 +108,7 @@ module.exports = function (grunt) {
             widget: {
                 options: {
                     mode: 'zip',
-                    archive: 'dist/<%= pkg.vendor %>_<%= pkg.name %>_<%= pkg.version %>.wgt'
+                    archive: 'build/<%= pkg.vendor %>_<%= pkg.name %>_<%= pkg.version %>.wgt'
                 },
                 files: [{
                     expand: true,
@@ -196,6 +196,9 @@ module.exports = function (grunt) {
                     specs: '<%= jasmine.test.options.specs %>',
                     vendor: '<%= jasmine.test.options.vendor %>',
                     template: require('grunt-template-jasmine-istanbul'),
+                    junit: {
+                        path: 'build/test-reports'
+                    },
                     templateOptions: {
                         coverage: 'build/coverage/json/coverage.json',
                         report: [{
