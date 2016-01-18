@@ -14,14 +14,12 @@
     };
 
     describe("Test WidgetSelectregion", function () {
-        var widget;
         beforeAll(function () {
             window.MashupPlatform = new MockMP.MockMP();
         });
 
         beforeEach(function () {
             MashupPlatform.reset();
-            widget = new WidgetSelectregion();
         });
 
         it("Dummy test", function () {
