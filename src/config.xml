@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UPM-ETSIINF" name="widget-selectregion" version="0.1.0">
+<details>
+  <title>Select Region</title>
+  <homepage>https://github.com/fidash/widget-selectregion.git</homepage>
+  <authors>Miguel Garcia</authors>
+  <email>mgarcia@conwet.com</email>
+  <image></image>
+  <smartphoneimage></smartphoneimage>
+  <description>Widget that let you select regions</description>
+  <longdescription>DESCRIPTION.md</longdescription>
+  <changelog>doc/changelog.md</changelog>
+  <doc>doc/index.md</doc>
+  <license>MIT</license>
+  <issuetracker>https://github.com/fidash/widget-selectregion/issues</issuetracker>
+</details>
+
+<requirements>
+
+</requirements>
+
+<preferences>
+</preferences>
+<wiring>
+  <outputendpoint name="regions" type="text" label="Regions" description="Send regions selected" friendcode="regions"/>
+</wiring>
+<contents src="index.html"/>
+<rendering height="38" width="3"/>
+</widget>
