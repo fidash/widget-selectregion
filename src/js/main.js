@@ -9,6 +9,7 @@
         regions.forEach(function (region) {
             $("<li></li>")
                 .addClass("list-group-item")
+                .addClass("item")
                 .text(region)
                 .appendTo(father);
         });
