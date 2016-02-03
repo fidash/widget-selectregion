@@ -18,8 +18,12 @@
     var loadRegions = function loadRegions() {
         FIDASHRequests.get(url, function (err, data) {
             if (err) {
+                var msg = err;
+                if (typeof err !== "string") {
+                    msg = "Error: " + err.status + ". " + err.statusText + "\nResponse: " + err.responseText;
+                }
                 window.console.log(err);
-                MashupPlatform.widget.log(err);
+                MashupPlatform.widget.log(msg);
                 // Show error?
                 return;
             }
