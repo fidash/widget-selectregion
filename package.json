@@ -1,44 +1,44 @@
 {
     "name": "widget-selectregion",
-  "description": "Widget that let you select regions",
-  "version": "0.6.7",
-  "homepage": "git@github.com:fidash/widget-selectregion.git",
-  "author": {
-    "name": "Miguel Garcia",
-    "email": "mgarcia@conwet.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:fidash/widget-selectregion.git"
-  },
-  "bugs": {
-    "url": "https://github.com/fidash/widget-selectregion/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "git@github.com:fidash/widget-selectregion.git/blob/master/LICENSE-MIT"
-    }
-  ],
-  "devDependencies": {
-    "mock-applicationmashup": "^0.1.3",
-    "bower": "^1.3.12",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jscs": "^1.2.0",
-    "jquery": "^2.1.1",
-    "jasmine-jquery": "~2.1.0",
-    "grunt-bower-task": "^0.4.0",
-    "grunt-contrib-jasmine": "^0.9.2",
-    "grunt-template-jasmine-istanbul": "^0.4.0",
-    "grunt-jsbeautifier": "~0.2.10",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-compress": "^0.11.0",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-strip-code": "^0.1.2",
-    "grunt-text-replace": "~0.4.0"
-  },
-  "keywords": [
-    "widget"
-  ],
-  "vendor": "UPM-ETSIINF"
+    "description": "Widget that let you select regions",
+    "version": "0.7.1",
+    "homepage": "git@github.com:fidash/widget-selectregion.git",
+    "author": {
+        "name": "Miguel Garcia",
+        "email": "mgarcia@conwet.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:fidash/widget-selectregion.git"
+    },
+    "bugs": {
+        "url": "https://github.com/fidash/widget-selectregion/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "git@github.com:fidash/widget-selectregion.git/blob/master/LICENSE-MIT"
+        }
+    ],
+    "devDependencies": {
+        "mock-applicationmashup": "^0.1.3",
+        "bower": "^1.3.12",
+        "grunt-contrib-jshint": "^0.10.0",
+        "grunt-jscs": "^1.2.0",
+        "jquery": "^2.1.1",
+        "jasmine-jquery": "~2.1.0",
+        "grunt-bower-task": "^0.4.0",
+        "grunt-contrib-jasmine": "^0.9.2",
+        "grunt-template-jasmine-istanbul": "^0.4.0",
+        "grunt-jsbeautifier": "~0.2.10",
+        "grunt-contrib-clean": "~0.6.0",
+        "grunt-contrib-compress": "^0.11.0",
+        "grunt-contrib-copy": "^0.8.0",
+        "grunt-strip-code": "^0.1.2",
+        "grunt-text-replace": "~0.4.0"
+    },
+    "keywords": [
+        "widget"
+    ],
+    "vendor": "UPM-ETSIINF"
 }
