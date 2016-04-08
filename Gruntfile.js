@@ -180,7 +180,7 @@ module.exports = function (grunt) {
                 src: ['src/js/*.js', '!src/js/main.js'],
                 options: {
                     specs: 'src/test/js/*Spec.js',
-                    helpers: ['src/test/helpers/*.js'],
+                    helpers: 'src/test/helpers/*.js',
                     vendor: ['node_modules/jquery/dist/jquery.js',
                         'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
 
