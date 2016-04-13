@@ -108,7 +108,7 @@ module.exports = function (grunt) {
             widget: {
                 options: {
                     mode: 'zip',
-                    archive: 'build/<%= pkg.vendor %>_<%= pkg.name %>_<%= pkg.version %>.wgt'
+                    archive: 'dist/<%= pkg.vendor %>_<%= pkg.name %>_<%= pkg.version %>.wgt'
                 },
                 files: [{
                     expand: true,
