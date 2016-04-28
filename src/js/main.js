@@ -2,7 +2,8 @@
 (function () {
     "use strict";
     /***  AUTHENTICATION VARIABLES  ***/
-    var url = "http://130.206.84.4:1028/monitoring/regions/";
+    // var url = "http://130.206.84.4:1028/monitoring/regions/";
+    var flavorurl = "http://130.206.113.159:8086/api/v1";
 
     var fillRegions = function fillRegions(regions) {
         var father = $("#regionContainer");
@@ -16,7 +17,8 @@
     };
 
     var loadRegions = function loadRegions() {
-        FIDASHRequests.get(url, function (err, data) {
+
+        FIDASHRequests.get(flavorurl + "/nodes", function (err, data) {
             if (err) {
                 var msg = err;
                 if (typeof err !== "string") {
@@ -27,11 +29,13 @@
                 // Show error?
                 return;
             }
-            var regions = [];
+            var regions = data.Infrastructures.map(function (x) { return x.name; });
 
-            data._embedded.regions.forEach(function (region) {
-                regions.push(region.id);
-            });
+            // var regions = [];
+
+            // data._embedded.regions.forEach(function (region) {
+            //     regions.push(region.id);
+            // });
 
             stopAnimation();
             fillRegions(regions.sort());
