@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UPM-ETSIINF" name="widget-selectregion" version="0.10.0">
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UPM-ETSIINF" name="widget-selectregion" version="0.11.0">
 <details>
   <title>Select Region</title>
   <homepage>https://github.com/fidash/widget-selectregion.git</homepage>

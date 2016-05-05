@@ -1,7 +1,7 @@
 {
     "name": "widget-selectregion",
     "description": "Widget that let you select regions",
-    "version": "0.10.0",
+    "version": "0.11.0",
     "homepage": "git@github.com:fidash/widget-selectregion.git",
     "author": {
         "name": "Miguel Garcia",

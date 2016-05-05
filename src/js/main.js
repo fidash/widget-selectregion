@@ -18,7 +18,7 @@
 
     var loadRegions = function loadRegions() {
 
-        FIDASHRequests.get(flavorurl + "/nodes", function (err, data) {
+        FIDASHRequests.get(flavorurl + "/regions", function (err, data) {
             if (err) {
                 var msg = err;
                 if (typeof err !== "string") {
