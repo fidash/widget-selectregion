@@ -19,6 +19,16 @@
 
 .item:hover {
   cursor: pointer;
+  background-color: #eee;
+}
+
+.item.active {
+  border-color: #22537D;
+}
+
+.item.active:hover {
+  background-color: #2969A0;
+  border-color: #22537D;
 }
 
 @media(max-width: 200px) {

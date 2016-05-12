@@ -1,39 +1,39 @@
 {
-    "license": "Apache-2.0", 
-    "vendor": "UPM-ETSIINF", 
-    "name": "widget-selectregion", 
+    "license": "Apache-2.0",
+    "vendor": "UPM-ETSIINF",
+    "name": "widget-selectregion",
     "repository": {
-        "url": "git@github.com:fidash/widget-selectregion.git", 
+        "url": "git@github.com:fidash/widget-selectregion.git",
         "type": "git"
-    }, 
+    },
     "author": {
-        "name": "Miguel Garcia", 
+        "name": "Miguel Garcia",
         "email": "mgarcia@conwet.com"
-    }, 
+    },
     "bugs": {
         "url": "https://github.com/fidash/widget-selectregion/issues"
-    }, 
-    "version": "0.11.0", 
+    },
+    "version": "0.12.0",
     "keywords": [
         "widget"
-    ], 
+    ],
     "devDependencies": {
-        "jquery": "^2.1.1", 
-        "grunt-contrib-clean": "^1.0.0", 
-        "mock-applicationmashup": "^0.1.3", 
-        "grunt-contrib-jshint": "^0.10.0", 
-        "jasmine-jquery": "^2.1.0", 
-        "grunt-jscs": "^1.2.0", 
-        "grunt-contrib-copy": "^1.0.0", 
-        "grunt-text-replace": "^0.4.0", 
-        "grunt-bower-task": "^0.4.0", 
-        "bower": "^1.3.12", 
-        "grunt-contrib-jasmine": "^1.0.3", 
-        "grunt-contrib-compress": "^1.2.0", 
-        "grunt-strip-code": "^0.1.2", 
-        "grunt-jsbeautifier": "^0.2.10", 
+        "jquery": "^2.1.1",
+        "grunt-contrib-clean": "^1.0.0",
+        "mock-applicationmashup": "^0.1.3",
+        "grunt-contrib-jshint": "^0.10.0",
+        "jasmine-jquery": "^2.1.0",
+        "grunt-jscs": "^1.2.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-text-replace": "^0.4.0",
+        "grunt-bower-task": "^0.4.0",
+        "bower": "^1.3.12",
+        "grunt-contrib-jasmine": "^1.0.3",
+        "grunt-contrib-compress": "^1.2.0",
+        "grunt-strip-code": "^0.1.2",
+        "grunt-jsbeautifier": "^0.2.10",
         "grunt-template-jasmine-istanbul": "^0.4.0"
-    }, 
-    "homepage": "git@github.com:fidash/widget-selectregion.git", 
+    },
+    "homepage": "git@github.com:fidash/widget-selectregion.git",
     "description": "Widget that let you select regions"
 }

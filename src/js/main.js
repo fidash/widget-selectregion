@@ -2,7 +2,7 @@
 (function () {
     "use strict";
     /***  AUTHENTICATION VARIABLES  ***/
-    // var url = "http://130.206.84.4:1028/monitoring/regions/";
+    var url = "http://130.206.84.4:11027/monitoring/regions/";
     var flavorurl = "http://130.206.113.159:8086/api/v1";
 
     var fillRegions = function fillRegions(regions) {
@@ -16,6 +16,31 @@
         });
     };
 
+    var loadRegions2 = function loadRegions2() {
+        FIDASHRequests.get(url, function (err, data) {
+            if (err) {
+                var msg = err;
+                if (typeof err !== "string") {
+                    msg = "Error: " + err.status + ". " + err.statusText + "\nResponse: " + err.responseText;
+                }
+                window.console.log(err);
+                MashupPlatform.widget.log(msg);
+                // Show error?
+                return;
+            }
+
+            var regions = [];
+
+            data._embedded.regions.forEach(function (region) {
+                regions.push(region.id);
+            });
+
+            stopAnimation();
+            fillRegions(regions.sort());
+        });
+    };
+
+
     var loadRegions = function loadRegions() {
 
         FIDASHRequests.get(flavorurl + "/regions", function (err, data) {
@@ -25,7 +50,8 @@
                     msg = "Error: " + err.status + ". " + err.statusText + "\nResponse: " + err.responseText;
                 }
                 window.console.log(err);
-                MashupPlatform.widget.log(msg);
+                MashupPlatform.widget.log("Flavor API down, let's try monitoring API.");
+                loadRegions2.call(this);
                 // Show error?
                 return;
             }
