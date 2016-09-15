@@ -50,7 +50,7 @@
                     msg = "Error: " + err.status + ". " + err.statusText + "\nResponse: " + err.responseText;
                 }
                 window.console.log(err);
-                MashupPlatform.widget.log("Flavor API down, let's try monitoring API.");
+                //MashupPlatform.widget.log("Flavor API down, let's try monitoring API.");
                 loadRegions2.call(this);
                 // Show error?
                 return;
